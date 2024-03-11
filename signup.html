@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+    <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+
+
+    <form id="f1">
+        <div class="card signup-card">
+            <div class="card-header">Sign up</div>
+            <div class="card-body">
+                <fieldset>
+                    <legend>Personal details</legend>
+                    <div class="form-element">
+                        <div class="form-label"><label for="email">Email*: </label></div>
+                        <div class="form-control-container"><input type="email" class="form-control" id="email" name="email" autocomplete="off" autofocus="autofocus" placeholder="Email" required="required">
+                        </div>
+                    </div>
+
+                    <div class="form-element">
+                        <div class="form-label"><label for="password">Password*: </label></div>
+                        <div class="form-control-container"><input type="password" class="form-control" id="password" name="password" placeholder="Password" required="required">
+                        </div>
+                    </div>
+
+                    <div class="form-element">
+                        <div class="form-label"><label for="password">Name: </label></div>
+                        <div class="form-control-container"><input type="text" class="form-control" id="name" name="name" placeholder="Name" pattern="^[A-Za-z ]*$" title="only alphabets required">
+                        </div>
+                    </div>
+                </fieldset>
+
+
+                <div class="form-element">
+                    <div class="form-label"><label for="password">City: </label></div>
+                    <div class="form-control-container"><input type="text" class="form-control" id="city" name="city" placeholder="city" list="cities">
+                        <datalist id="cities">
+                            <option value="Pune"></option>
+                            <option value="Chennai"></option>
+                            <option value="Nashik"></option>
+                            <option value="Sri nagar"></option>
+                            <option value="Mumbai"></option>
+                            <option value="Kolkata"></option>
+                            <option value="Kochi"></option>
+                        </datalist>
+                    </div>
+                </div>
+
+                
+
+                <div class="form-element">
+                    <div class="form-label"><label for="password">Date and time of journey: </label></div>
+                    <div class="form-control-container"><input type="datetime-local" class="form-control" name="Dateandtimeofjourney" id="Dateandtimeofjourney">
+                    </div>
+                </div>
+
+                <div class="form-element">
+                    <div class="form-label"><label for="password">Attachment: </label></div>
+                    <div class="form-control-container"><input type="file" class="form-control" id="attachment" name="attachment" multiple="multiple">
+                    </div>
+                </div>
+
+                
+
+                <div class="form-element">
+                    <div class="form-label"><label for="password">Amount: </label></div>
+                    <div class="form-control-container"><input type="number" class="form-control" id="amount" placeholder="Amount" step="100">
+                    </div>
+                </div>
+
+                <div class="form-element">
+                    <div class="form-label"><label for="password">Website rating: </label></div>
+                    <div class="form-control-container"><input type="range" min="1" max="5" value="1" class="form-control" id="password">
+                    </div>
+                </div>
+
+                <div class="form-element">
+                    <div class="form-label"><label for="password">Gender: </label></div>
+                    <div class="form-control-container">
+                        <input type="radio" name="gender" id="male">
+                        <label for="male">Male</label>
+                        <input type="radio" name="gender" id="female">
+                        <label for="female">Female</label>
+                    </div>
+                </div>
+
+                <div class="form-element">
+                    <div class="form-label">&nbsp;</div>
+                    <div class="form-control-container">
+                        <input type="checkbox" id="receivenewsletters">
+                        <label for="receivenewsletters">Receive News Letters</label>
+                    </div>
+                </div>
+
+                <div class="form-element">
+                    <div class="form-label"><label for="password">Address: </label></div>
+                    <div class="form-control-container"><textarea class="form-control" id="password"></textarea>
+                    </div>
+                </div>
+
+                <div class="form-element">
+                    <div class="form-label"><label for="password">Country: </label></div>
+                    <div class="form-control-container"><select class="form-control" id="password" required="required">
+                        <option value="">Please select</option>
+                        <optgroup label="A">
+                            <option value="Auckland">Auckland</option>
+                        </optgroup>
+                        <optgroup label="B">
+                            <option value="Brazil">Brazil</option>
+                        </optgroup>
+                        <optgroup label="C">
+                            <option value="China">China</option>
+                        <option value="Columbia">Columbia</option>
+                        </optgroup>
+                        <optgroup label="I">
+                            <option value="India">India</option>
+                        </optgroup>
+                        <optgroup label="L">
+                            <option value="London">London</option>
+                        </optgroup>
+                        <optgroup label="R">
+                            <option value="Russia">Russia</option>
+                            <option value="Romania">Romania</option>
+                        </optgroup>
+                        <optgroup label="F">
+                            <option value="France">France</option>
+                        </optgroup>
+                        <optgroup label="U">
+                            <option value="Unitedstates">United states</option>
+                        </optgroup>
+                    </select>
+                    </div>
+                </div>
+
+                <div class="card-footer">
+                    <input type="hidden" name="usertype" value="customer">
+                    <button class="btn">Submit</button>
+                    <input type="reset" class="btn reset-btn">
+                    
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>
